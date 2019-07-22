@@ -12,9 +12,7 @@ declare const tap: Export;
 
 export = tap;
 
-declare namespace tap {
-  export interface Test extends internal.Test {}
-}
+declare namespace tap {}
 
 declare namespace internal {
   export class TAP extends Test {}
