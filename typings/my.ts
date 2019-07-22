@@ -2,9 +2,6 @@ import tap from "..";
 import { assertType } from "typescript-is";
 import { AnyFunction, AnyClass, AnyConstructor } from "tsdef";
 
-declare const process: any;
-console.log("TS_NODE_COMPILER", process.env.TS_NODE_COMPILER);
-
 /**
  * 'typescript-is' has some limitations on what it can check and
  * what it cannot, so here are few utility type convertion types
