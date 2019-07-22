@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noImplicitReturns": true,
+		"noImplicitAny": true,
+		"noFallthroughCasesInSwitch": true,
+		// "noUnusedLocals": true,
+		// "noUnusedParameters": true,
+		"plugins": [
+			{
+				"transform": "typescript-is/lib/transform-inline/transformer"
+			},
+		]
+	},
+	"files": [
+		"my.ts",
+		"check-typescript-is.ts"
+	]
+}

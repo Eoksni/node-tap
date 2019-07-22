@@ -102,5 +102,10 @@
     "bin/jsx.js",
     "bin/jack.js",
     "lib/*.js"
-  ]
+  ],
+  "devDependencies": {
+    "tsdef": "0.0.13",
+    "ttypescript": "^1.5.7",
+    "typescript-is": "^0.12.2"
+  }
 }

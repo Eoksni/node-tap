@@ -2,25 +2,31 @@
 // Project: tap
 // Definitions by: Dmitry Mazurok <https://github.com/Eoksni>
 
+declare interface Export extends internal.TAP {
+  default: Export;
+  t: Export;
+  Test: typeof internal.Test;
+}
+
 declare const tap: Export;
 
 export = tap;
 
-declare interface Export extends TAP {
-  default: Export;
-  t: Export;
-  Test: Test;
+declare namespace tap {
+  export interface Test extends internal.Test {}
 }
 
-declare class TAP extends Test {
-  pass(message?: string, extra?: Options.Assert): boolean;
-}
+declare namespace internal {
+  export class TAP extends Test {}
 
-declare namespace Options {
-  export interface Assert {
-    todo?: boolean | string;
-    skip?: boolean | string;
+  export class Test {
+    pass(message?: string, extra?: Options.Assert): boolean;
+  }
+
+  export namespace Options {
+    export interface Assert {
+      todo?: boolean | string;
+      skip?: boolean | string;
+    }
   }
 }
-
-declare class Test {}
