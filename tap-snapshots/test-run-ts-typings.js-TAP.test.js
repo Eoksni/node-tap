@@ -8,11 +8,9 @@
 exports[`test/run/ts-typings.js TAP ts-typings > must match snapshot 1`] = `
 TAP version 13
 ok 1 - cli-tests/ts-typings/ok.ts # {time} {
-    # Subtest: qwer
-        1..0
-    ok 1 - qwer # {time}
-    
-    1..1
+    ok 1 - expected to not throw
+    ok 2 - expected to not throw
+    1..2
     # {time}
 }
 

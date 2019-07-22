@@ -23,5 +23,4 @@
 !coverage-map.js
 !postpublish.sh
 !netlify.toml
-
-!typings
+!tap.d.ts
